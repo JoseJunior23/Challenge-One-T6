@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Protest+Revolution&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Enigma Machine - decodificador de textos</title>
+</head>
+
+<body>
+  <header class="menu">
+    <img class="menu-image" src="./assets/logo1.png " alt="logo enigma machine" />
+    <p>Decodificador de textos</p>
+  </header>
+  <main class="container">
+    <section class="container-content">
+      <textarea class="container-content-text " cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+      <div class="container-content-warning">
+        <img src="./assets//vector.png" alt="" />
+        <p>Apenas letras minusculas e sem acentos</p>
+      </div>
+      <div class="container-content-btn">
+        <button class=" container-content-btn-cripto">Criptografar</button>
+        <button class="container-content-btn-descripto">Descriptografar</button>
+      </div>
+    </section>
+    <section class="container-content-display">
+      <div class="container-content-display-not-found">
+        <img src="./assets/buscando.png" alt="Imagem de não encontrado" id="image-not-found"
+          class="container-content-display-not-found-image" />
+        <h3 class="container-content-display-message">
+          Nenhuma mensagem encontrada
+        </h3>
+        <p class="container-content-display-image-text">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+      </div>
+      <div class="container-content-display-response">
+        <p class="container-content-display-response-text">Texto criptografado</p>
+        <textarea class="container-content-display-message-cripto" cols="20" rows="10"></textarea>
+        <button onclick="alternateText()" class="container-content-display-btn-copy">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    Desenvolvido por José Júnior ☕ Copyright 2024 ©
+  </footer>
+  <script src="./js/crypto.js"></script>
+</body>
+
+</html>
