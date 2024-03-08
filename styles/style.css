@@ -46,14 +46,14 @@ body {
 }
 
 .container-content {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
-  gap: 5%;
 }
 .container-content-text {
   display: flex;
+  justify-content: space-between;
   text-align: center;
   font-size: 1.5rem;
   font-family: var(--font-primary);
@@ -69,10 +69,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 15rem;
+  margin-top: 10rem;
   gap: 6px;
   font-size: 0.7rem;
-  width: 50%;
+  width: 70%;
 }
 
 .container-content-btn {
@@ -106,6 +106,7 @@ body {
   color: var(--color-quaternary);
 }
 .container-content-btn-descripto {
+  display: flex;
   background-color: var(--color-primary);
   border: 2px solid var(--color-quaternary);
   width: 30%;
@@ -140,11 +141,12 @@ body {
   background-color: #ffffff;
   padding: 8% 2%;
   border-radius: 10px;
-  width: 25rem;
+  width: 100%;
   border: none;
   height: 100%;
   color: var(--color-quaternary);
   font-size: 2rem;
+  margin-left: 5%;
 }
 .container-content-display-message-cripto{
   border: none;
@@ -181,3 +183,33 @@ body {
   line-height: 2rem;
   font-family: var(--font-primary);
 } 
+
+@media screen and (max-width: 412px){
+  .container{
+    display: block;
+    align-items: center;
+  }
+  .container-content-display-not-found{
+    display: none;
+  }
+  .container-content-warning{
+    width: 95%;
+    font-size: 0.6rem;
+    justify-content: center;
+  }
+  .container-content-btn-cripto{
+    font-size: 0.5rem;
+  }
+  .container-content-btn-descripto{
+    font-size: 0.5rem;
+  }
+  .container-content-display-response{
+  justify-content: center;
+  align-items: center;
+  }
+  .footer{
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  }
